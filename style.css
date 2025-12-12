@@ -1,0 +1,181 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: 'Georgia', serif;
+  background: #E8D7C3;
+  color: #5d4037;
+  line-height: 1.6;
+}#E8D7C3
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* Logo no topo */
+.logo-top {
+  text-align: center;
+  padding: 20px 0;
+  background: ##E8D7C3;
+}
+.logo {
+  height: 80px; /* Ajuste o tamanho da sua logo aqui */
+}
+
+/* Hero */
+.hero {
+  padding: 40px 0;
+  background: linear-gradient(to bottom, #efebe9, #d7ccc8);
+}
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+h1 {
+  font-size: 3.5rem;
+  color: #4e342e;
+  margin-bottom: 10px;
+}
+.subtitle {
+  font-size: 1.4rem;
+  color: #8d6e63;
+  margin-bottom: 30px;
+}
+.price-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin: 30px 0;
+}
+.old-price {
+  text-decoration: line-through;
+  color: #a1887f;
+  font-size: 1.3rem;
+}
+.new-price {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #6d4c41;
+  margin: 10px 0;
+}
+.parcel { color: #558b2f; font-size: 1.3rem; }
+
+.urgency {
+  background: #ffebee;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px 0;
+  color: #c62828;
+  font-weight: bold;
+}
+#counter {
+  font-size: 2rem;
+  color: #c62828;
+  margin-top: 10px;
+}
+
+.whatsapp-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 18px 40px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 30px auto;
+  box-shadow: 0 10px 30px rgba(76,175,80,0.4);
+  transition: 0.3s;
+}
+.whatsapp-btn:hover { transform: scale(1.05); background: #43a047; }
+.secure { text-align: center; margin-top: 20px; color: #6d4c41; }
+
+/* Galeria de fotos (carrossel) */
+.gallery {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(93,64,55,0.2);
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  border-radius: 50%;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Depoimentos */
+.testimonials {
+  padding: 80px 0;
+  background: #efebe9;
+  text-align: center;
+}
+.testimonials h2 { font-size: 2.5rem; margin-bottom: 50px; color: #4e342e; }
+.test-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.test-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  font-style: italic;
+}
+
+/* Botão fixo no celular */
+.fixed-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  width: 90%;
+}
+@media (max-width: 768px) {
+  .hero .container { grid-template-columns: 1fr; text-align: center; }
+  h1 { font-size: 2.8rem; }
+  .fixed-btn { display: block; }
+}
+
+/* Nome da marca embaixo da logo */
+.brand-name {
+  font-family: 'Playfair Display', serif;  /* fonte elegante – já carrega automática */
+  font-size: 2.8rem;
+  color: #4e342e;
+  margin: 10px 0 5px;
+  letter-spacing: 2px;
+}
+
+.brand-tagline {
+  font-size: 1rem;
+  color: #8d6e63;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}

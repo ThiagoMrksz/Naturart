@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natur'art • Bolsa de Crochê Artesanal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Logo no topo -->
+<div class="logo-top">
+  <img src="imgs/logo.jpeg" alt="Logo Natur'art" class="logo">
+  <h1 class="brand-name">Natur'art</h1>
+  <p class="brand-tagline">Artesanal • Natural • Exclusivo</p>
+</div>
+
+  <!-- Seção Hero com carrossel -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Bolsa de Crochê Natur'art</h1>
+        <p class="subtitle">Feita à mão com amor, fio 100% algodão e muito estilo boho</p>
+        
+        <div class="price-box">
+          <span class="old-price">De R$ 259,90</span>
+          <span class="new-price">Por apenas R$ 179,90</span>
+          <span class="parcel">ou 6x de R$ 29,98 sem juros</span>
+        </div>
+
+        <div class="urgency">
+          <p>🔥 Apenas 9 unidades disponíveis na pré-venda!</p>
+          <div id="counter"></div>
+        </div>
+
+        <button class="whatsapp-btn" onclick="buyNow()">
+          <i class="fab fa-whatsapp"></i> QUERO A MINHA AGORA!
+        </button>
+
+        <p class="secure">✅ Pagamento via Pix • Envio para todo Brasil</p>
+      </div>
+
+      <!-- Carrossel de fotos -->
+      <div class="gallery">
+        <div class="slides">
+          <img src="imgs/bmarrom.jpeg" alt="Bolsa 1">
+          <img src="imgs/bmarrom1.jpeg" alt="Bolsa 2">
+          <img src="imgs/bmarrom2.jpeg" alt="Bolsa 3">
+          <img src="imgs/bmarrom3.jpeg" alt="Bolsa 4">
+          
+          <!-- Adicione mais se quiser: <img src="imagens/bolsa6.jpg" alt="Bolsa 6"> -->
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">❮</button>
+        <button class="next" onclick="moveSlide(1)">❯</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>O que nossas clientes estão dizendo</h2>
+      <div class="test-grid">
+        <div class="test-card">
+          <p>"A bolsa mais linda que já tive! Acabamento perfeito e super espaçosa."</p>
+          <strong>– Mariana, SP</strong>
+        </div>
+        <div class="test-card">
+          <p>"Recebi em 4 dias e já uso todo dia. O tom de marrom é exatamente como na foto!"</p>
+          <strong>– Julia, RJ</strong>
+        </div>
+        <div class="test-card">
+          <p>"Presenteei minha mãe e ela amou! Qualidade incrível."</p>
+          <strong>– Camila, MG</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Botão fixo no celular -->
+  <div class="fixed-btn">
+    <button class="whatsapp-btn" onclick="buyNow()">
+      <i class="fab fa-whatsapp"></i> COMPRAR AGORA R$ 179,90
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

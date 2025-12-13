@@ -265,3 +265,32 @@ h1 {
 .footer p::before {
   content: "🐆 ";
 }
+.cta-box {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 28px;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(74,51,37,0.2);
+  max-width: 500px;
+  margin: 50px auto;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 1s forwards;
+}
+.cta-title {
+  font-family: 'Caprasimo', cursive;
+  font-size: 3.5rem;
+  color: #4a3325;
+  margin-bottom: 15px;
+}
+.cta-subtitle {
+  font-size: 2rem;
+  color: #c06a42;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.cta-desc {
+  font-size: 1.4rem;
+  color: #2a2a2a;
+  max-width: 400px;
+  margin: 0 auto;
+}

@@ -1,38 +1,15 @@
-// Contador regressivo de 24h (reinicia todo dia)
-function startTimer() {
-  const end = new Date();
-  end.setHours(23, 59, 59, 999);
-  const timer = setInterval(() => {
-    const now = new Date();
-    const distance = end - now;
-
-    const hours = Math.floor(distance / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById("counter").innerHTML = 
-      `${hours.toString().padStart(2,'0')}h ${minutes.toString().padStart(2,'0')}min ${seconds.toString().padStart(2,'0')}s`;
-
-    if (distance < 0) {
-      clearInterval(timer);
-      document.getElementById("counter").innerHTML = "OFERTA ENCERRADA!";
-    }
-  }, 1000);
-}
-startTimer();
-
 // Botão WhatsApp
 function buyNow() {
   const mensagem = `
-*Olha só o que acabei de reservar na Natur'art!* 🌿
+*Olha só o que encontrei na Natur'art!* 🌿
 
-Bolsa de Crochê Artesanal
-Preço promocional: R$ 179,90 (6x sem juros)
+Acessórios de crochê artesanal
+Preço promocional: R$ 69,90
 
 Quero garantir a minha antes que acabe! 🚨
   `.trim();
 
-  const whatsappURL = `https://wa.me/5518997617391?text=${encodeURIComponent(mensagem)}`; // Troque pelo seu número aqui!
+  const whatsappURL = `https://wa.me/5518997617391?text=${encodeURIComponent(mensagem)}`;
   window.open(whatsappURL, '_blank');
 }
 

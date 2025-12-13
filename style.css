@@ -248,3 +248,20 @@ h1 {
   .slides img { height: 420px; }
   .fixed-btn { display: block; }
 }
+
+/* Footer */
+.footer {
+  background: #E8D7C3;
+  padding: 30px 0;
+  margin-top: 80px;
+  border-top: 1px solid rgba(74, 51, 37, 0.1);
+}
+.footer p {
+  text-align: center;
+  font-size: 1rem;
+  color: #4a3325;
+  font-weight: 500;
+}
+.footer p::before {
+  content: "🐆 ";
+}

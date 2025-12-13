@@ -1,12 +1,12 @@
 // Botão WhatsApp
 function buyNow() {
   const mensagem = `
-*Olha só o que encontrei na Natur'art!* 🌿
+Olha só o que encontrei na Natur'art!
 
 Acessórios de crochê artesanal
 Preço promocional: R$ 69,90
 
-Quero garantir a minha antes que acabe! 🚨
+Quero garantir a minha antes que acabe! 
   `.trim();
 
   const whatsappURL = `https://wa.me/5518997617391?text=${encodeURIComponent(mensagem)}`;

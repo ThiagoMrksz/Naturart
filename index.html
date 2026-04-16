@@ -4,84 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Natur'art • Acessórios de Crochê Artesanal</title>
-  <link rel="stylesheet" href="style.css">
+  
+  <!-- Fonts and Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
-  <!-- Favicon (logo na aba do navegador) -->
-<link rel="icon" href="imgs/favicon.png" type="image/png">
-<link rel="apple-touch-icon" href="imgs/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="%PUBLIC_URL%/imgs/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/imgs/favicon.png">
 </head>
 <body>
-
-  <!-- Logo no topo -->
-  <div class="logo-top">
-    <img src="imgs/logo.png" alt="Logo Natur'art" class="logo">
-    <h1 class="brand-name">Natur'Art</h1>
-  </div>
-
-  <!-- Hero com carrossel -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <h1>Acessórios de crochê</h1>
-        <p class="subtitle">Feitos à mão para pessoas autênticas.</p>
-        
-        <div class="cta-box">
-  <p class="cta-title">Peças únicas e exclusivas 🐆</p>
-  <p class="cta-subtitle">Entre em contato e peça o seu orçamento personalizado</p>
-
-</div>
-
-        <button class="whatsapp-btn" onclick="buyNow()">
-          <i class="fab fa-whatsapp"></i> QUERO A MINHA AGORA!
-        </button>
-
-        <p class="secure">✅ Pagamento via Pix e Cartão • Envio para todo Brasil</p>
-      </div>
-
-      <!-- Carrossel de fotos -->
-      <div class="gallery">
-        <div class="slides">
-          <img src="imgs/bmarrom.jpeg" alt="Bolsa 1">
-          <img src="imgs/bmarrom1.jpeg" alt="Bolsa 2">
-          <img src="imgs/bmarrom2.jpeg" alt="Bolsa 3">
-          <img src="imgs/bmarrom3.jpeg" alt="Bolsa 4">
-        </div>
-        <button class="prev" onclick="moveSlide(-1)">❮</button>
-        <button class="next" onclick="moveSlide(1)">❯</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Depoimentos -->
-  <section class="testimonials">
-    <div class="container">
-      <h2>O que nossas clientes estão dizendo</h2>
-      <div class="test-grid">
-        <div class="test-card">
-          <p>"A bolsa mais linda que já tive! Acabamento perfeito e super espaçosa."</p>
-          <strong>– Mariana, SP</strong>
-        </div>
-        <div class="test-card">
-          <p>"Recebi em 4 dias e já uso todo dia. O tom de marrom é exatamente como na foto!"</p>
-          <strong>– Julia, RJ</strong>
-        </div>
-        <div class="test-card">
-          <p>"Presenteei minha mãe e ela amou! Qualidade incrível."</p>
-          <strong>– Camila, MG</strong>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-
-  <script src="script.js"></script>
+  <noscript>Você precisa habilitar JavaScript para executar este aplicativo.</noscript>
+  <div id="root"></div>
+  <!-- 
+    Nota: Todo o conteúdo da sua landing page agora está nos componentes React.
+    O arquivo original foi migrado para src/pages/Home.js
+  -->
 </body>
 </html>
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Natur'Art. Todos os direitos reservados. 🐆</p>
-    </div>
-  </footer>
